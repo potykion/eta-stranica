@@ -12,3 +12,4 @@ jobs:
         uses: docker/build-push-action@v1.1.0
         with:
           repository: eta-stranica
+          path: ../.. 
