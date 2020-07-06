@@ -47,6 +47,13 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    // https://github.com/nuxt-community/modules/tree/master/packages/yandex-metrika
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: process.env.YANDEX_METRIKA_KEY,
+      }
+    ],
   ],
   /*
   ** Axios module configuration
