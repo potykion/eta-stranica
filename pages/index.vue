@@ -16,6 +16,9 @@
       <li class="leading-loose">
         Ты можешь поддержать эту страницу <a class="underline hover:font-bold" :href="cardDonateUrl" target="_blank">тут</a>
       </li>
+      <li class="leading-loose">
+        или прислать свою идею <a class="underline hover:font-bold" :href="mailUrl">сюда</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -28,6 +31,10 @@
 
     get cardDonateUrl() {
       return process.env.CARD_DONATE_URL;
+    }
+
+    get mailUrl() {
+      return process.env.EMAIL_URL;
     }
   }
 </script>
